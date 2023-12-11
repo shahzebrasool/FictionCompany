@@ -1,0 +1,95 @@
+﻿@model List<FictionalCompany.Entities.Models.User>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<link href="/js/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+
+<link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+<!-- Custom styles for this template -->
+<link href="/css/sb-admin-2.min.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.7/css/select.dataTables.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.11.0/sweetalert2.css" />
+
+
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    @*  <h1 class="h3 mb-2 text-gray-800">Tables</h1>
+    <p class="mb-4">
+    DataTables is a third party plugin that is used to generate the demo table below.
+    For more information about DataTables, please visit the <a target="_blank"
+    href="https://datatables.net">official DataTables documentation</a>.
+    </p> *@
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <h1 class="h3 mb-0 text-gray-800">Users</h1>
+                <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm btn-new-user"><i class="fas fa-plus fa-sm text-white-50"></i> New User</a>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Mail</th>
+                            <th>Phone</th>
+                            <th>Skills</th>
+                            <th>Hobby</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Username</td>
+                                <td>@item.Mail</td>
+                                <td>@item.PhoneNumber</td>
+                                <td>@item.Skillsets</td>
+                                <td>@item.Hobby</td>
+                                <td>
+                                    <a href="javascript:void(0);" class="d-none d-sm-inline-block btn btn-xsm btn-edit-user btn-success shadow-sm" data-id="@item.Id"><i class="fas fa-pencil-alt fa-sm text-white-50"></i></a>
+                                    <a href="javascript:void(0);" class="d-none d-sm-inline-block btn btn-xsm btn-delete-user btn-danger shadow-sm" data-id="@item.Id"><i class="fas fa-trash-alt fa-sm text-white-50"></i></a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id="modal-placeholder"></div>
+
+
+<script src="/vendor/jquery/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+
+<!-- Custom scripts for all pages-->
+<script src="/js/sb-admin-2.min.js"></script>
+ <script src="/js/datatables/datatables.bundle.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.11.0/sweetalert2.all.min.js"></script>
+
+
+<script src="/js/demo/user-data.js"></script>
+

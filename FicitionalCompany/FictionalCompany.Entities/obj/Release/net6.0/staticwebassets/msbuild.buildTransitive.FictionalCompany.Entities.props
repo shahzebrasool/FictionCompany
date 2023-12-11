@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\FictionalCompany.Entities.props" />
+</Project>

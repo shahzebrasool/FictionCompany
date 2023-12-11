@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "ii7JcwZTcLU+w9RGa5X+6IMxkEOqg7UNAmRs59xECPw=",
+  "Source": "FicitionalCompany",
+  "BasePath": "_content/FicitionalCompany",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\Per\\FictionalCompany\\FicitionalCompany\\FictionalCompany.Entities\\FictionalCompany.Entities.csproj",
+      "Version": 2,
+      "Source": "FictionalCompany.Entities",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Release;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Release;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
