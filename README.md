@@ -3,6 +3,9 @@
 # Project Overview 
 This project involves performing CRUD operations using HTTP verbs. The CRUD operations (GET, POST, PUT, DELETE) have been implemented through APIs, and these APIs are linked with the frontend.
 
+**#Backend**
+Created backend in .Net 6.
+
 # Frontend 
 For the frontend, I've created a simple MVC project using .NET Core 6. The APIs are called from the controller in the MVC project, indicating a separation between the frontend and backend logic.
 
